@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "nyc":{
+    "require": [
+      "esm"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node  -r  esm  index.js",
+    "test": "nyc mocha  --timeout 100000 --exit"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,10 @@
   },
   "homepage": "https://github.com/katusabe01/Api-quick-credit#readme",
   "dependencies": {
+    "esm": "^3.2.25",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
