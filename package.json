@@ -24,7 +24,7 @@
   "homepage": "https://github.com/katusabe01/Api-quick-credit#readme",
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
